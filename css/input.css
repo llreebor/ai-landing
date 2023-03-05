@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .container {
+    @apply max-w-[1200px];
+  }
+  body {
+    @apply relative font-poppins;
+  }
+  p,
+  h3,
+  h2,
+  h4,
+  label {
+    @apply dark:text-slate-100;
+  }
+  input {
+    @apply dark:border-slate-700 dark:bg-slate-800;
+  }
+}
+
+@layer components {
+  /* Button */
+  .btn {
+    @apply inline-block rounded-[5px] bg-blue-2 py-3 px-10 leading-normal text-white transition-colors hover:bg-blue-3 dark:bg-slate-800 dark:hover:bg-slate-700 sm:w-full sm:text-center;
+  }
+}
+
+@layer utilities {
+}
+
+.swiper-button-disabled {
+  @apply bg-gray-3;
+}
+.swiper-scrollbar-drag {
+  @apply bg-blue-2;
+}
